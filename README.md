@@ -2,9 +2,6 @@
 Short script to duplicate ('clone') a directory and its contents. However, clones never come out exactly like their source material, so this script allows for text-based changes to be built into all Word files contained in the cloned directory.
 
 
-# GRE Calculator
- Personal project to develop and design a calculator application that looks and functions like the classic on-screen calculator used on the Quantitative Measures section of the Graduate Records Examinations (GRE).
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
@@ -21,6 +18,15 @@ Sure, you could use Word's [Templating System](https://docs.microsoft.com/en-us/
 Enter the Folder Cloner.
 
 The Folder Cloner is a small script that abstracts away all those steps of finding and replacing so you can focus on getting your updated information where it needs to go. Provide the Folder Cloner a directory to clone and a dictionary of terms to replace, and it does the rest.
+
+The Folder Cloner applies changes to both `.doc` and `.docx` files, but cloned file results are in `.doc` format only. 
+
+Replacement string changes are made:
+* in the newly cloned folder name 
+* in the file names of all newly cloned documents
+* inside the main body of all newly cloned documents
+* inside all headers and footers of all newly cloned documents
+* inside all tables and nested tables of all newly cloned documents
 
 **Note: The Folder Cloner only supports the Windows platform at the moment.**
 
@@ -69,8 +75,40 @@ pip install -r requirements.txt
 ## Usage
 
 Run the Folder Cloner by opening command line, navigating to the installation folder and running:
-`python main.py`
+```sh
+python main.py
+```
 
+To see an example of the Folder Cloner, navigate to the `//sample test` directory of this project. This folder contains a Word file filled with boilerplate text. This is the folder (and contained files) that we want to clone in this example.
+[![Folder Cloner Use Example Origianl File][use-files-before]]
+
+Then, navigate to the root directory of this project and open up the `clone_test.py` file.
+
+Inside, the `rep_list` variable is what is used to set the changes we want to make on the cloned folders and files. `rep_list` contains a list of dictionaries. Each element of the list (each dictionary) represents a single cloned/duplicate folder we want to create. So, in the example of the `rep_list` in the `//sample test` directory, we will be creating three folders from our root directory, each which will receive unique changes to the file names, folder name, and content.
+
+```sh
+rep_list = [
+	{'Ipsum': 'Python\'s Something Completely Different', 'Lorem': 'Monty ', '123': 'foobar'}, 
+	{'Ipsum': 'Python\'s Life of Brian', 'Lorem': 'Monty', '123': 'barfoo'},
+	{'Ipsum': 'Python\'s Holy Grail', 'Lorem': 'Monty', '123': 'foofoo'}, 
+]
+```
+
+Each dictionary in the `rep_list` contains key:value pairs separated by commas. Each key is a string that will be searched for in the document, and each corresponding value is a replacement string that will be used whenever the key is matched. So, in the first dictionary of `rep_list`:
+```sh
+{'Ipsum': 'Python\'s Something Completely Different', 'Lorem': 'Monty ', '123': 'foobar'}, 
+```
+... we can see that the string `'Ipsum'` will be replaced by the string `'Python\'s Something Completely Different'`, and so on.
+
+Finally, to see the Folder Cloner in action, open the command line, navigate to the installation folder and run:
+```sh
+python clone_test.py
+```
+
+This results in the duplicated folders...
+[![Folder Cloner Use Example Folders Result][use-folders-after]]
+ and files into the `//sample test` directory, and we can see all desired changes have been made to the folder names, file names, and content within the word documents:
+[![Folder Cloner Use Example Files Result][use-files-after]]
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -119,22 +157,8 @@ Project Link: [https://github.com/asa-holland/folder-cloner](https://github.com/
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=flat-square
-[contributors-url]: https://github.com/asa-holland/GRE-calculator/graphs/contributors
-[forks-shield]: https://github.com/asa-holland/GRE-calculator.svg?style=flat-square
-[forks-url]: https://github.com/asa-holland/GRE-calculator/network/members
-[stars-shield]: https://github.com/asa-holland/GRE-calculator.svg?style=flat-square
-[stars-url]: https://github.com/asa-holland/GRE-calculator/stargazers
-[issues-shield]: https://github.com/asa-holland/GRE-calculator.svg?style=flat-square
-[issues-url]: https://github.com/asa-holland/GRE-calculator/issues
-[license-shield]: https://github.com/asa-holland/GRE-calculator.svg?style=flat-square
-[license-url]: https://github.com/asa-holland/GRE-calculator/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/asa-holland-a2a0b5b7/
-[product-screenshot]: images/screenshot.png
-[old-calculator-screenshot]: images/gre_calculator_old_version.JPG
-[use-gif-1]: images/arithmetic1.gif
-[use-gif-2]: images/arithmetic2.gif
-[use-gif-3]: images/arithmetic3.gif
-[use-gif-memory]: images/memory.gif
-[use-gif-cce]: images/cce.gif
+[use-files-after]: images/sample_files_after.jpg
+[use-files-before]: images/sample_files_before.jpg
+[use-folders-after]: images/sample_folders_after.jpg
