@@ -1,11 +1,11 @@
 # Folder Cloner
-Short script to duplicate ('clone') a directory and its contents. However, clones never come out exactly like their source material, so this script allows for text-based changes to be built into all Word files contained in the cloned directory.
+Short script to duplicate ("clone") a directory and its contents. However, clones never come out exactly like their source material, so this script allows for text-based changes to be built into all Word files contained in the cloned directory.
 
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![GRE Calculator][use-gif-1]](https://github.com/asa-holland/GRE-calculator)
+![Folder Cloner Example Use][example-use]]
 
 Ever had the tedious task of duplicating a Microsoft Word file and making small changes to the text throughout the document? Find and Replace is a valuable friend.
 
@@ -80,7 +80,9 @@ python main.py
 ```
 
 To see an example of the Folder Cloner, navigate to the `//sample test` directory of this project. This folder contains a Word file filled with boilerplate text. This is the folder (and contained files) that we want to clone in this example.
-[![Folder Cloner Use Example Origianl File][use-files-before]]
+
+![Folder Cloner Use Example Origianl File][use-files-before]
+
 
 Then, navigate to the root directory of this project and open up the `clone_test.py` file.
 
@@ -106,9 +108,12 @@ python clone_test.py
 ```
 
 This results in the duplicated folders...
-[![Folder Cloner Use Example Folders Result][use-folders-after]]
+
+![Folder Cloner Use Example Folders Result][use-folders-after]
+
  and files into the `//sample test` directory, and we can see all desired changes have been made to the folder names, file names, and content within the word documents:
-[![Folder Cloner Use Example Files Result][use-files-after]]
+
+![Folder Cloner Use Example Files Result][use-files-after]
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -159,6 +164,7 @@ Project Link: [https://github.com/asa-holland/folder-cloner](https://github.com/
 <!-- MARKDOWN LINKS & IMAGES -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/asa-holland-a2a0b5b7/
+[example-use]: images/example-use-folder-cloner.gif
 [use-files-after]: images/sample_files_after.JPG
 [use-files-before]: images/sample_files_before.JPG
 [use-folders-after]: images/sample_folders_after.JPG
