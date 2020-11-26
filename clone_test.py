@@ -21,7 +21,7 @@ rep_list = [
 
 # Link to the sample directory that contains word files that will be duplicated and replaced in the cloning process
 path_to_folder_cloner = Path('/folder-cloner')
-path_to_sample_data_folder = path_to_folder_cloner / 'sample_test' / '123 Folder we want to clone Lorem Ipsum'
+path_to_sample_data_folder = path_to_folder_cloner / 'sample_test' / 'A Folder You Want to Clone Lorem Ipsum'
 
 # Run the clone folder function using the sample data and sample directory
 main.clone_folder(directory=path_to_sample_data_folder, replacement_dict_list=rep_list)
