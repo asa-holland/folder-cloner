@@ -5,7 +5,7 @@ Short script to duplicate ("clone") a directory and its contents. However, clone
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Folder Cloner Example Use][example-use]]
+![Folder Cloner Example Use][example-use]
 
 Ever had the tedious task of duplicating a Microsoft Word file and making small changes to the text throughout the document? Find and Replace is a valuable friend.
 
@@ -13,13 +13,13 @@ But what if your task requires multiple Word Docs to be changed? You'd need to o
 
 Let's add another layer to this onion. Let's say that instead of duplicating a set of Word files once, you needed to make multiple duplicates, each with small changes throughout. Now the time you're spending searching and replacing the text in all those documents has become quite the chore.
 
-Sure, you could use Word's [Templating System](https://docs.microsoft.com/en-us/power-platform/admin/using-word-templates-dynamics-365), but that requires time and effrot to build a template to be made for each base file you want to duplicate. Maybe you've been passed a set of files that you didn't create, but the changes need to be made throughout.
+Sure, you could use Word's [Templating System](https://docs.microsoft.com/en-us/power-platform/admin/using-word-templates-dynamics-365), but that requires time and effort to build a template for each base file you want to duplicate. Maybe you've been given a set of files that you didn't create, but the changes need to be made throughout.
 
 Enter the Folder Cloner.
 
-The Folder Cloner is a small script that abstracts away all those steps of finding and replacing so you can focus on getting your updated information where it needs to go. Provide the Folder Cloner a directory to clone and a dictionary of terms to replace, and it does the rest.
+The Folder Cloner is a small script that abstracts away all those steps of finding and replacing strings in Word documents so you can focus on getting your updated information where it needs to go. Provide the Folder Cloner a directory to clone and a dictionary of terms to replace, and it does the rest.
 
-The Folder Cloner applies changes to both `.doc` and `.docx` files, but cloned file results are in `.doc` format only. 
+The Folder Cloner applies changes to all `.doc` and `.docx` files in a provided directory, but all cloned files are rewritten in `.doc` format only. 
 
 Replacement string changes are made:
 * in the newly cloned folder name 
@@ -51,9 +51,9 @@ In order to use the Folder Cloner, you must first have Python and pip installed 
 python get-pip.py -g
 ```
 
-* Git is a version control system. In this project, Git is used to clone (copy) the most up-to-date project files from GitHub to your local machine. Download the latest version of [git](https://git-scm.com/download/win) and install on your local machine.
+Git is a version control system. In this project, Git is used to clone (copy) the most up-to-date project files from GitHub to your local machine. Download the latest version of [git](https://git-scm.com/download/win) and install on your local machine.
 
-* This project also relies on the underlying function of Microsoft Word to edit `.doc` and `.docx` files. A local installation of Microsoft Word is required to run this script. 
+This project also relies on the underlying function of Microsoft Word to edit `.doc` and `.docx` files. A local installation of Microsoft Word is required to run this script. 
 
 
 ### Installation
@@ -79,9 +79,9 @@ Run the Folder Cloner by opening command line, navigating to the installation fo
 python main.py
 ```
 
-To see an example of the Folder Cloner, navigate to the `//sample test` directory of this project. This folder contains a Word file filled with boilerplate text. This is the folder (and contained files) that we want to clone in this example.
+To see an example of the Folder Cloner, navigate to the `//sample test` directory of this project. This folder contains a subfolder that we want to clone. This subfolder contains a few Word files filled with boilerplate text.
 
-![Folder Cloner Use Example Origianl File][use-files-before]
+![Folder Cloner Use Example Original File][use-files-before]
 
 
 Then, navigate to the root directory of this project and open up the `clone_test.py` file.
@@ -107,11 +107,11 @@ Finally, to see the Folder Cloner in action, open the command line, navigate to 
 python clone_test.py
 ```
 
-This results in the duplicated folders...
+This duplicates our original folder (incorporating replacements into the folder name)...
 
 ![Folder Cloner Use Example Folders Result][use-folders-after]
 
- and files into the `//sample test` directory, and we can see all desired changes have been made to the folder names, file names, and content within the word documents:
+...as well as making all desired replacements to the file names and content within each word document:
 
 ![Folder Cloner Use Example Files Result][use-files-after]
 

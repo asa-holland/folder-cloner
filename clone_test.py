@@ -14,7 +14,7 @@ import os
 	# key: the term that will be replaced from the original file
 	# value: the replacement term that will be found in the updated replacement file
 rep_list = [
-	{'Ipsum': 'Python\'s Something Completely Different', 'Lorem': 'Monty ', '123': 'foobar'}, 
+	{'Ipsum': 'Python\'s Something Completely Different', 'Lorem': 'Monty', '123': 'foobar'}, 
 	{'Ipsum': 'Python\'s Life of Brian', 'Lorem': 'Monty', '123': 'barfoo'},
 	{'Ipsum': 'Python\'s Holy Grail', 'Lorem': 'Monty', '123': 'foofoo'}, 
 ]
