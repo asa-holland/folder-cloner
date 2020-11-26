@@ -159,6 +159,6 @@ Project Link: [https://github.com/asa-holland/folder-cloner](https://github.com/
 <!-- MARKDOWN LINKS & IMAGES -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/asa-holland-a2a0b5b7/
-[use-files-after]: images/sample_files_after.jpg
-[use-files-before]: images/sample_files_before.jpg
-[use-folders-after]: images/sample_folders_after.jpg
+[use-files-after]: images/sample_files_after.JPG
+[use-files-before]: images/sample_files_before.JPG
+[use-folders-after]: images/sample_folders_after.JPG
