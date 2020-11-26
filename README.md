@@ -44,7 +44,7 @@ To get a local copy up and running follow these simple steps.
 ### Prerequisites
 
 In order to use the Folder Cloner, you must first have Python and pip installed on your system. If you need assistance installing these prerequisites, see the folowing steps:
-* Python is a programming language. The majority of this project's code base is written in Python. Download the latest version of [Python](https://www.python.org/downloads/) and install onto your local machine.
+* Python is a programming language. All of this project's code base is written in Python. Download the latest version of [Python](https://www.python.org/downloads/) and install onto your local machine.
 
 * Pip is the package installer for Python. Once Python is installed, open your local machine's command line and use the following command to utilize Python to install Pip:
 ```sh
@@ -53,7 +53,7 @@ python get-pip.py -g
 
 Git is a version control system. In this project, Git is used to clone (copy) the most up-to-date project files from GitHub to your local machine. Download the latest version of [git](https://git-scm.com/download/win) and install on your local machine.
 
-This project also relies on the underlying function of Microsoft Word to edit `.doc` and `.docx` files. A local installation of Microsoft Word is required to run this script. 
+This project also relies on the underlying function of Microsoft Word to edit `.doc` and `.docx` files. A local installation of Microsoft Word is required to run this script. All other filetypes are duplicated into the cloned folders, but are not modified.
 
 
 ### Installation
@@ -74,10 +74,24 @@ pip install -r requirements.txt
 <!-- USAGE EXAMPLES -->
 ## Usage
 
+To use the Folder Cloner once installed, open the `main.py` file and add the following line item to the file:
+
+```sh
+clone_folder(directory="", replacement_dict_list=[])
+```
+
+Replace the path of the directory you want to clone, and a list of dictionaries of changes you want to make to the text of your cloned files and folders (see usage example below for further information on dictionary setup).
+
+
 Run the Folder Cloner by opening command line, navigating to the installation folder and running:
 ```sh
 python main.py
 ```
+
+Voila, your folder and its contents have been successfully cloned and changed!
+
+
+## Usage Example with Sample Files
 
 To see an example of the Folder Cloner, navigate to the `//sample test` directory of this project. This folder contains a subfolder that we want to clone. This subfolder contains a few Word files filled with boilerplate text.
 
