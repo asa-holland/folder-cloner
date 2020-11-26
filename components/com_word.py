@@ -13,6 +13,9 @@ def start_word():
 	# Try creating the word application using com
 	try:
 	    word_application = com.gencache.EnsureDispatch("Word.Application")
+
+	    # enforce the applicattion to be not visible (repeat the code to be sure)
+	    word_application.Visible = False
 	
 	# Handle the case where word is not able to recognize the atributes provided to it
 	# This code adapted from fossum on GitHub:
@@ -46,7 +49,11 @@ def start_word():
 	    # run the application
 	    word_application = com.gencache.EnsureDispatch("Word.Application")
 
+	    # enforce the applicattion to be not visible (repeat the code to be sure)
+	    word_application.Visible = False
+
 	# Set the visibility of the Word Application to False
+	# This is repeated to catch any lag time where the word application's visibility has not previously been turned off
 	word_application.Visible = False
 
 	# Disable alert displays on the Word Application

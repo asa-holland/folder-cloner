@@ -42,9 +42,6 @@ def document_replace(current_word_app, target_string, replacement_string):
     :param replacement_string: Takes a string to replace in the word document, based on occurances of the target_string
     """
 
-    # TODO: currently has two issues, maintains case of previous text and does not change within tables
-
-
     # Sets up some numerical option paramaters
     wrap_value = 1
     wd_replace_all_value = 2
@@ -212,6 +209,6 @@ def cloneFolder(word_application, directory_to_clone, replacement_dictionary):
         process_document(word_app=word_application, filename=file, replacement_dictionary=replacement_dictionary, cloned_directory=cloned_directory_path)
 
     # Let the user know the clone has been complete
-    print(f'...{directory_to_clone} has successfully been cloned into {cloned_directory_path}.')
+    print(f'...{cloned_folder_name} has been successfully created.')
 
 

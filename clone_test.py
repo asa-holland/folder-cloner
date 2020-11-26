@@ -9,12 +9,13 @@ from pathlib import Path
 # import os to handle folder navigation
 import os
 
-# Sample replacement dictionary list. Thie list contains dictionaries, each dictionary consisting of key value pairs using the following system:
+# Sample replacement dictionary list. Thie list contains dictionaries, one dictionary for each new cloned folder you want to make.
+# Each dictionary consisting of key value pairs using the following system:
 	# key: the term that will be replaced from the original file
 	# value: the replacement term that will be found in the updated replacement file
 rep_list = [
 	{'Ipsum': 'Python\'s Something Completely Different', 'Lorem': 'Monty ', '123': 'foobar'}, 
-	{'Ipsum': 'Python\'s Life of Brian', 'Lorem': 'Monty', '123': 'barbar'},
+	{'Ipsum': 'Python\'s Life of Brian', 'Lorem': 'Monty', '123': 'barfoo'},
 	{'Ipsum': 'Python\'s Holy Grail', 'Lorem': 'Monty', '123': 'foofoo'}, 
 ]
 
