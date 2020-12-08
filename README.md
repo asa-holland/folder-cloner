@@ -62,7 +62,7 @@ This project also relies on the underlying function of Microsoft Word to edit `.
 
 2. Enter the following command to use Git to clone this repository to your local machine.
 ```sh
-git clone https://github.com/asa-holland/folder-cloner.git
+git clone https://github.com/asa-leholland/folder-cloner.git
 ```
 3. Enter the following command to use Pip to install this repository's dependencies.
 ```sh
@@ -132,7 +132,7 @@ This duplicates our original folder (incorporating replacements into the folder 
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/asa-holland/folder-cloner/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/asa-leholland/folder-cloner/issues) for a list of proposed features (and known issues).
 
 
 
@@ -159,9 +159,9 @@ Distributed under the MIT License. See [LICENSE](https://github.com/asa-holland/
 <!-- CONTACT -->
 ## Contact
 
-Asa Holland - [@AsaHolland404](https://twitter.com/AsaHolland404) - hollandasa@gmail.com
+Asa LeHolland - asaleholland@gmail.com
 
-Project Link: [https://github.com/asa-holland/folder-cloner](https://github.com/asa-holland/folder-cloner)
+Project Link: [https://github.com/asa-leholland/folder-cloner](https://github.com/asa-leholland/folder-cloner)
 
 
 
@@ -170,8 +170,6 @@ Project Link: [https://github.com/asa-holland/folder-cloner](https://github.com/
 
 * [Eric Fossum](https://github.com/fossum) on GitHub solved a [particularly tricky issue](https://gist.github.com/rdapaz/63590adb94a46039ca4a10994dff9dbe/) encountered while jumpstarting Word to open desired files.
 * [othneildrew](https://github.com/othneildrew) for creating the [template README file](https://github.com/othneildrew/Best-README-Template) that was used as the starting point for the README for this project. 
-
-
 
 
 
