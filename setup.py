@@ -57,19 +57,19 @@ setup(
 
 	# Your name: 
 
-	author='Asa Holland',
+	author='Asa LeHolland',
 
 	# Your email address:
 
-	author_email='hollandasa@gmail.com',
+	author_email='asaleholland@gmail.com',
 
 	# Link to your github repository or website: 
 
-	url='https://github.com/asa-holland/folder-cloner',
+	url='https://github.com/asa-leholland/folder-cloner',
 
 	# Download Link from where the project can be downloaded from:
 
-	download_url='https://github.com/asa-holland/folder-cloner',
+	download_url='https://github.com/asa-leholland/folder-cloner',
 
 	# List of keywords: 
 
